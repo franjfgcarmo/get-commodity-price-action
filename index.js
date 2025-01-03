@@ -13,7 +13,11 @@ try{
     let price = 0;
 
     if(commodity !== gold && commodity !== silver){
-        console.log(`Commodity ${commodity} not supported`);
+        throw new Error(`Commodity ${commodity} not supported`);
+    }
+
+    if(currency !== USD && currency !== EUR){
+        throw new Error(`Currency ${currency} not supported`);
     }
 
     if(commodity === gold){
