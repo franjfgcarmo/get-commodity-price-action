@@ -21,9 +21,9 @@ try{
     }
 
     if(commodity === gold){
-        price = currency.toUpperCase() === USD ? 2652.84 : 2425.52;
+        price = currency === USD ? 2652.84 : 2425.52;
     }else if(commodity === silver){
-        price = currency.toUpperCase() === USD ? 30.59 : 29.10;
+        price = currency === USD ? 30.59 : 29.10;
     }
     console.log(`Current price of gold per ounce: ${price} ${currency}`);
     
