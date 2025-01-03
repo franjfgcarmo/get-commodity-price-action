@@ -7,7 +7,7 @@ try{
     const USD = 'USD';
     const EUR = 'EUR';
     const commodity = core.getInput('commodity').toLowerCase();
-    const currency = core.getInput('price').toUpperCase;
+    const currency = core.getInput('price').toUpperCase();
     const message = `The price of ${commodity} is ${currency}`;
     console.log(message);
     let price = 0;
@@ -27,7 +27,7 @@ try{
 
     const payload = JSON.stringify(github.context.payload, undefined, 2);
     console.log(`The event payload: ${payload}`);
-    
+
 }catch(error){
     core.setFailed(error.message);
 }
