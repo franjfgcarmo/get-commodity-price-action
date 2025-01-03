@@ -1,0 +1,17 @@
+name: 'Get Commodity Price Action'
+description: 'Get gold or silver current price per ounce in USD/EUR'
+inputs:
+  commodity:
+    description: 'Commodity to get price for'
+    required: true
+    default: 'gold'
+  currency:
+    description: 'Currency to get price in'
+    required: false
+    default: 'USD'
+outputs:
+  price:
+    description: 'Price of the commodity in the specified currency'
+runs:
+  using: 'node20'
+  main: 'index.js'
