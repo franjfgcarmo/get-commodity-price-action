@@ -7,8 +7,8 @@ try{
     const USD = 'USD';
     const EUR = 'EUR';
     const commodity = core.getInput('commodity').toLowerCase();
-    const currency = core.getInput('price').toUpperCase();
-    const message = `The price of ${commodity} is ${currency}`;
+    const currency = core.getInput('currency').toUpperCase();
+    const message = `Commodity: ${commodity} - Currency ${currency}`;
     console.log(message);
     let price = 0;
 
